@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LovelyByte Ice Cream</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #ffccd5;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ff5c8a;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: slideDown 1s ease forwards;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd6e8;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #ff99ac, #ff3366);
+      text-align: center;
+      padding: 5rem 2rem;
+      position: relative;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .hero p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      background-color: white;
+      color: #ff3366;
+      border: none;
+      padding: 1rem 2rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ffd6e8;
+      transform: scale(1.1);
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background-color: #ffa3b1;
+    }
+
+    .section h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .flavors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: #ffb6c1;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .special-section {
+      background-color: #ff8fab;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .special-section h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .special-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .special-images img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .special-images img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #ff5c8a;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LovelyByte</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#flavors">Flavors</a></li>
+        <li><a href="#special">Special</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>The Future of Ice Cream is Here</h2>
+    <p>Chill out with colourful, taste-exploding flavors.</p>
+    <button class="btn">Taste the Byte</button>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About LovelyByte</h3>
+    <p style="text-align:center; max-width:700px; margin:0 auto;">LovelyByte is a futuristic ice cream brand fusing bold flavors with high-tech aesthetics. Born out of a love for innovation and indulgence, we create the coolest desserts for the next generation of ice cream lovers.</p>
+  </section>
+
+  <section class="section" id="flavors">
+    <h3>Our Flavors</h3>
+    <div class="flavors">
+      <div class="card">
+        <h4>Neon Berry</h4>
+        <p>Glows in the dark and tastes like magic.</p>
+      </div>
+      <div class="card">
+        <h4>Circuit Crunch</h4>
+        <p>Chocolate, caramel, and a spark of surprise.</p>
+      </div>
+      <div class="card">
+        <h4>Byte Mint</h4>
+        <p>Refreshing mint with a tech twist.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-section" id="special">
+    <h3>Special Ice Cream</h3>
+    <div class="special-images">
+      <img src="icecream1.png" alt="Pastry Ice Cream 1">
+      <img src="icecream2.png" alt="Pastry Ice Cream 2">
+      <img src="icecream3.png" alt="Pastry Ice Cream 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 LovelyByte. Built with love & code. Follow us on social media for more updates!</p>
+  </footer>
+</body>
+</html>

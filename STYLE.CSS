@@ -1,0 +1,140 @@
+/* lovelyByte Ice Cream Landing Page CSS */
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #ffafbd, #ffc3a0);
+  color: #fff;
+}
+
+header {
+  background-color: rgba(255, 0, 102, 0.8);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffccf9;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: radial-gradient(circle, #ff99c8 0%, #ff006e 100%);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background: #d63384;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #c2185b;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.flavors, .special-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.special-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+.special-images img {
+  width: 200px;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.special-images img:hover {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+footer {
+  background: rgba(255, 0, 102, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
